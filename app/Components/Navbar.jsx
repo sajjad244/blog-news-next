@@ -9,6 +9,8 @@ const Navbar = () => {
   const {getUser} = useKindeBrowserClient();
   const user = getUser();
 
+  console.log(process.env.KINDE_CLIENT_ID);
+
   return (
     <div className="bg-gray-800">
       <nav className="flex justify-between items-center p-5  text-white container mx-auto">
